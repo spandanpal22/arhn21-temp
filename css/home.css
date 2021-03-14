@@ -1,0 +1,10 @@
+body{
+    background-color: #141615;
+}
+
+.central-illustration{
+    height: 80vh;
+    margin: auto;
+    bottom:0;
+    position: fixed;
+}
