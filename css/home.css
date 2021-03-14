@@ -38,7 +38,7 @@ a:hover{
     top: 39%;
     right: 22%;
     z-index: -1;
-    padding: 2% 3% 2% 3%;
+    padding: 2% 3% 2% 5%;
 }
 
 .posAndShapeAttractions {
@@ -101,7 +101,8 @@ a:hover{
     }
 
     .matrix-gif {
-        width: inherit;
+        width: 67vw;
+        margin-left: 14%;
     }
 
 }
