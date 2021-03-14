@@ -2,6 +2,10 @@ body {
     background-color: #141615;
 }
 
+.mobile{
+    display: none;
+}
+
 a{
     text-decoration: none;
     color: black;
@@ -72,6 +76,10 @@ a:hover{
 @media only screen and (max-width: 600px) {
     .desktop {
         display: none;
+    }
+
+    .mobile{
+        display: block;
     }
 
     .central-illustration {
