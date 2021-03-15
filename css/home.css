@@ -1,5 +1,6 @@
 body {
     background-color: #141615;
+    overflow: hidden;
 }
 
 .mobile{
@@ -19,6 +20,7 @@ a:hover{
     width: 34vw;
     bottom: 0;
     position: fixed;
+    z-index: 10;
 }
 
 .matrix-gif {
@@ -33,11 +35,15 @@ a:hover{
     right: 0;
     padding: 1% 1% 1% 1%;
 }
+.posAndShapeContactUs:hover{
+    top: 27%;
+    right: 3%;
+    border-radius: 10px !important;
+}
 
 .posAndShapeTeam {
     top: 39%;
     right: 22%;
-    z-index: -1;
     padding: 2% 3% 2% 5%;
 }
 
@@ -45,6 +51,11 @@ a:hover{
     top: 49%;
     right: 0;
     padding: 4% 7% 4% 7%;
+}
+.posAndShapeAttractions:hover{
+    top: 49%;
+    right: 8%;
+    border-radius: 10px !important;
 }
 
 .posAndShapeEvents{
@@ -72,6 +83,11 @@ a:hover{
     font-weight: 800;
     font-size: 30px;
     border-radius: 10px;
+    transition: transform .2s;
+}
+
+.nav-card:hover {
+  transform: scale(1.5);
 }
 
 @media only screen and (max-width: 1000px) {
