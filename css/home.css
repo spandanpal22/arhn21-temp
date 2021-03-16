@@ -127,4 +127,11 @@ a:hover{
         margin-left: 14%;
     }
 
+    .posAndShapeLive {
+        font-size: 21px !important;
+        top: 76%;
+        left: 15%;
+        height: 25vh;
+        padding: 4% 10% 4% 10%;
+    }
 }
