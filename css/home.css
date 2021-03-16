@@ -3,15 +3,16 @@ body {
     overflow: hidden;
 }
 
-.mobile{
+.mobile {
     display: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
-a:hover{
+
+a:hover {
     color: black;
 }
 
@@ -35,7 +36,8 @@ a:hover{
     right: 0;
     padding: 1% 1% 1% 1%;
 }
-.posAndShapeContactUs:hover{
+
+.posAndShapeContactUs:hover {
     top: 27%;
     right: 3%;
     border-radius: 10px !important;
@@ -52,25 +54,26 @@ a:hover{
     right: 0;
     padding: 4% 7% 4% 7%;
 }
-.posAndShapeAttractions:hover{
+
+.posAndShapeAttractions:hover {
     top: 49%;
     right: 8%;
     border-radius: 10px !important;
 }
 
-.posAndShapeEvents{
+.posAndShapeEvents {
     top: 27%;
     left: -7%;
     padding: 4% 10% 3% 10%;
 }
 
-.posAndShapeAboutUs{
+.posAndShapeAboutUs {
     top: 42%;
     left: 10%;
     padding: 3% 5% 3% 5%;
 }
 
-.posAndShapeLive{
+.posAndShapeLive {
     top: 64%;
     left: 15%;
     padding: 4% 10% 4% 10%;
@@ -87,7 +90,7 @@ a:hover{
 }
 
 .nav-card:hover {
-  transform: scale(1.5);
+    transform: scale(1.5);
 }
 
 @media only screen and (max-width: 1000px) {
@@ -101,8 +104,8 @@ a:hover{
     }
 }
 
-@media only screen and (max-width: 790px){
-    .nav-card{
+@media only screen and (max-width: 790px) {
+    .nav-card {
         z-index: 30;
     }
 }
@@ -112,7 +115,7 @@ a:hover{
         display: none;
     }
 
-    .mobile{
+    .mobile {
         display: block;
     }
 
@@ -127,4 +130,11 @@ a:hover{
         margin-left: 14%;
     }
 
+    .posAndShapeLive {
+        font-size: 21px !important;
+        top: 76%;
+        left: 15%;
+        height: 25vh;
+        padding: 4% 10% 4% 10%;
+    }
 }
