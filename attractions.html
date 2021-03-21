@@ -44,6 +44,7 @@
 
     <link rel="https://api.w.org/" href="https://sourdoreille.net/wp-json/">
     <link rel="stylesheet" href="css/generated-default_1605622710609.css">
+    <link rel="stylesheet" href="css/attractions.css">
 
     <script>
         (function (w) {
@@ -87,17 +88,14 @@
 
 <body class="home blog group-blog">
 
-    <div id="overlay-loader-red" class="overlay-loader">
-        <div class="overlay-loader-inner">
-            <span class="loader-logo logo">SOURDOREILLE</span>
-        </div>
-    </div>
-    <div id="overlay-loader-blue" class="overlay-loader">
-        <div class="overlay-loader-inner">
-            <span class="loader-logo logo">SOURDOREILLE</span>
-        </div>
-    </div>
-
+    <div class="cont">
+        <div class="over3 "></div>
+      <div class="over box"></div>
+      <div class="over2 box"></div>
+    
+    
+    
+      </div>
     
 
     <div id="content" class="site-content wrapper">
@@ -303,8 +301,9 @@
                     </span></div>
                 </div>
                 <div class="wrapper wrapper--large" id="slider-home-cache-bottom">
-                </div>
+                
             </div>
+        </div>
 
 
             <div class="wrapper wrapper--large" id="home-content">
@@ -415,7 +414,7 @@
                 </div>
 
             </a><a class="home-list-item has-hover-text home-list-type--voir home-list-item--alternate"
-                   href="#"
+                   href="test.html"
                    title="Lire l'article On n'arr&ecirc;te pas des corps qui dansent">
                 <div class="home-list-item-image bkg-cover"
                      style="background-image: url(https://sourdoreille.net/2016/wp-content/uploads/2021/02/vignettes-paysage-snack-danse-1-730x370.jpg);">
@@ -456,6 +455,8 @@
 
 <script src="js/1.11.3-jquery.min.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
 <script src="js/widgets.js"></script>
 <script>
     window.jQuery || document.write('<script src="https://sourdoreille.net/2016/wp-content/themes/sourdoreille/scripts/vendor/jquery-1.11.3.min.js"><\/script>');
@@ -482,6 +483,36 @@
                 '<div class="link_navigateur"><p>Ce site n\'est pas optimis&eacute; pour votre navigateur internet<br />Vous pouvez le mettre &agrave; jour ou utiliser un des navigateurs suivants&nbsp;:<ul><li><a target="_blank" href="http://www.google.com/intl/fr_fr/chrome/browser/"><img src="https://sourdoreille.net/2016/wp-content/themes/sourdoreille/img/navigateur/chrome.png" alt="Chrome"><br/>Chrome<li><a target="_blank" href="http://support.apple.com/kb/DL1531?viewlocale=fr_FR"><img src="https://sourdoreille.net/2016/wp-content/themes/sourdoreille/img/navigateur/safari.png" alt="Safari"><br/>Safari<li><a target="_blank" href="https://www.mozilla.org/fr/firefox/new/"><img src="https://sourdoreille.net/2016/wp-content/themes/sourdoreille/img/navigateur/firefox.png" alt="Firefox"><br/>Firefox<li><a target="_blank" href="http://windows.microsoft.com/fr-fr/internet-explorer/ie-11-worldwide-languages"><img src="https://sourdoreille.net/2016/wp-content/themes/sourdoreille/img/navigateur/ie.png" alt="IE"><br/>Internet Explorer');
         }
     })(Modernizr, document);
+
+
+
+
+    var t1=new TimelineMax({
+    onComplete:function(){
+        console.log('finsted')
+    }
+    })
+
+    t1.to('.over3',0,{scaleX:1,ease:Power1.easeInOut},0);
+    t1.to('.over',0.5,{scaleX:1,ease:Power1.easeInOut},0);
+    t1.to('.over2',0.5,{scaleX:1,ease:Power1.easeInOut},0.3);
+    t1.to('.over',0.5,{width:"0%",ease:Power1.easeInOut},0.5);
+    t1.to('.over2',0.5,{width:"0%",ease:Power1.easeInOut},1);
+    t1.to('.over3',0.5,{width:"0%",ease:Power1.easeInOut},1);
+
+
+      document.getElementByClassName('cta').addEventListener('click',function(){
+        console.log('clicked');
+        t1.reversed(!t1.reversed());
+        if(t1.reversed()){
+            t1.reverse();
+        }
+        else{
+            t1.play();
+        }
+      })
+
+
 </script>
 
 
