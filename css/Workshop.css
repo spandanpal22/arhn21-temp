@@ -47,9 +47,10 @@ body {
   text-align: center;
   display: block;
   margin: 0 auto;
-  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+  text-shadow: 0 0 80px rgba(161, 235, 179, 0.5);
  /* Clip Background Image */
-  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+  background: url(../img/animated-text-fill.png) repeat-y;
+ 
   -webkit-background-clip: text;
   background-clip: text;
  /* Animate Background Image */
@@ -99,14 +100,14 @@ body {
   line-height: 200px;
   font-size: 50px;
   text-align: center;
-  -webkit-box-shadow: 0 0 8px #fff;
-          box-shadow: 0 0 8px #fff;
+  -webkit-box-shadow: 0 0 8px #30D692;
+          box-shadow: 0 0 8px #30D692;
   -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
 }
 
 #drag-container img:hover, #drag-container video:hover {
-  -webkit-box-shadow: 0 0 15px #fffd;
-          box-shadow: 0 0 15px #fffd;
+  -webkit-box-shadow: 0 0 15px #30D692;
+          box-shadow: 0 0 15px #30D692;
   -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0007);
 }
 
@@ -117,7 +118,7 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%,-50%) rotateX(90deg);
           transform: translate(-50%,-50%) rotateX(90deg);
-  color: #fff;
+  color: #30D692;
 }
 
 #ground {
