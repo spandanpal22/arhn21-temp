@@ -4,17 +4,17 @@
 }
 
 
-body {
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background: #111;
-  -webkit-perspective: 1000px;
-          perspective: 1000px;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-}
+/*body {*/
+/*  overflow: hidden;*/
+/*  display: -webkit-box;*/
+/*  display: -ms-flexbox;*/
+/*  display: flex;*/
+/*  background: #111;*/
+/*  -webkit-perspective: 1000px;*/
+/*          perspective: 1000px;*/
+/*  -webkit-transform-style: preserve-3d;*/
+/*          transform-style: preserve-3d;*/
+/*}*/
 
 
 .heading{
