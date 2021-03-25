@@ -11,7 +11,7 @@ var imgHeight = 250; // height of images (unit: px)
 var imgrad=25;
 
 // Link of background music - set 'null' if you dont want to play background music
-var bgMusicURL = 'https://api.soundcloud.com/tracks/143041228/stream?client_id=587aa2d384f7333a886010d5f52f302a';
+var bgMusicURL = null;
 var bgMusicControls = true; // Show UI music control
 
 /*
@@ -25,7 +25,7 @@ var bgMusicControls = true; // Show UI music control
 
 // ===================== start =======================
 // animation start after 1000 miliseconds
-setTimeout(init, 1000);
+// setTimeout(init, 1000);
 
 var odrag = document.getElementById('drag-container');
 var ospin = document.getElementById('spin-container');
