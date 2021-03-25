@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Aarohan 2021</title>
+    <link rel="icon" type="image/png" href="./img/final-logo.png" >
 
     <!-- Bootstrap   -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -31,11 +32,11 @@
                 anchors: ['home', 'workshops', 'page3'],
                 sectionsColor: ['#141615', '#141615', '#bfda00'],
                 navigation: {
-		            'textColor': '#f2f2f2',
-		            'bulletsColor': '#ccc',
-		            'position': 'right',
-		            'tooltips': ['Home', 'Workshops', 'Section 3']
-		        },
+                    'textColor': '#f2f2f2',
+                    'bulletsColor': '#ccc',
+                    'position': 'right',
+                    'tooltips': ['Home', 'Workshops', 'Section 3']
+                },
 
                 afterLoad: function (anchorLink, index) {
 
@@ -51,6 +52,7 @@
                             });
                         });
                         setTimeout(init, 1);
+
                     }
 
                     //section 3
@@ -71,6 +73,7 @@
 </head>
 <body>
 
+<!-- Navbar -->
 <header class="cd-header mobile">
     <div class="header-wrapper">
         <div class="logo-wrap">
@@ -98,6 +101,7 @@
     </div>
 </div>
 <div id="pagepiling">
+    <!--  Home  -->
     <div class="section" id="section1">
         <div class="container-fluid desktop" style="height: 100vh;">
             <div class="row">
@@ -169,8 +173,10 @@
         <div class='cursor3' id="cursor3"></div>
 
     </div>
-    <div class="section" id="section2">
-        <div class="intro desktop" style="margin-top:10%;">
+
+    <!--  Workshops  -->
+    <div class="section" id="section2" style="overflow: hidden;">
+        <div class="intro" style="margin-top:10%;">
             <div id="drag-container">
                 <div id="spin-container">
                     <!-- Add your images (or video) here -->
@@ -199,9 +205,6 @@
                 </div>
             </div>
         </div>
-		<div class="intro mobile">
-			<h1 style="color: white;">Mob workshop</h1>
-		</div>
     </div>
     <div class="section" id="section3">
         <div class="intro">
