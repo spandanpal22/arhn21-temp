@@ -138,9 +138,23 @@ a:hover {
         font-size: 21px !important;
         top: 76%;
         left: 15%;
-        height: 25vh;
+        height: 24vh;
         padding: 4% 10% 4% 10%;
+		-webkit-border-bottom-left-radius: 0;
+		-webkit-border-bottom-right-radius: 0;
+		-moz-border-radius-bottomleft: 0;
+		-moz-border-radius-bottomright: 0;
     }
+
+	#ground{
+		width: 50% !important;
+		height: 50% !important;
+	}
+
+	#spin-container > a > img {
+		width: 60%;
+		height: 60%;
+	}
 }
 
 /*navbar*/
