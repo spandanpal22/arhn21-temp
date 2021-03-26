@@ -1,4 +1,26 @@
+
+
+
+
 body{
-    /*background-image: url("../img/contact-us.jpg") ;*/
+    background-image: url('../img//contact-us.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+
+
+}
+@media (max-width: 790px) {
+
+    body{
+        background-image: url('../img//contact-us-phone.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        
+    
+    
+    }
 
 }
