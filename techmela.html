@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aarohan 2021</title>
+    <link rel="icon" type="image/png" href="./img/final-logo.png">
+
+    <!-- Bootstrap   -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="css/techmela.css">
+
+</head>
+<body>
+
+
+<!-- Button trigger modal -->
+<button id="launchModal" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+        style="display: none;">
+    Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade modal-fullscreen-sm-down" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title container-fluid modalPrjTitle" id="exampleModalLabel"
+                    style="text-align: center;font-weight: bold; font-size: 20px;">Project title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <!--  video-->
+                            <div class="projectVideo">
+                                <iframe id="modalPrjVideo" class="prjVideo"
+                                        src="">
+                                </iframe>
+                            </div>
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-5">
+                            <!--  desc-->
+                            <p id="modalPrjDesc">Project Description</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                type="button" role="tab" aria-controls="pills-home" aria-selected="true">Section 1
+        </button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Section 2
+        </button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Section 3
+        </button>
+    </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+        <div class="sectionHeading" style="text-align: center;">
+            Section 1
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-md-10">
+                    <div class="page-content">
+            <div class="card"
+                 style="background-image: url(https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);">
+                <div class="content">
+                    <h2 class="title">Project title</h2>
+                    <p class="copy">Short description</p>
+
+                    <!-- While integrating with backend pass the django template vars in the  showDetails function -->
+
+                    <button onclick="showDetails('prj title1','prj desc1','https://drive.google.com/file/d/1KFFhLqRLhdF27KwVVe0npoVX0lNLPhpM/preview')"
+                            class="btn detailsButton">
+                        Show Details
+                    </button>
+                </div>
+            </div>
+            <div class="card"
+                 style="background-image: url(https://images.unsplash.com/photo-1533903345306-15d1c30952de?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);">
+                <div class="content">
+                    <h2 class="title">Project title</h2>
+                    <p class="copy">Short description</p>
+                    <button onclick="showDetails('prj title2','prj desc2','https://drive.google.com/file/d/1KFFhLqRLhdF27KwVVe0npoVX0lNLPhpM/preview')"
+                            class="btn detailsButton">Show Details
+                    </button>
+                </div>
+            </div>
+            <div class="card"
+                 style="background-image: url(https://images.unsplash.com/photo-1545243424-0ce743321e11?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);">
+                <div class="content">
+                    <h2 class="title">Project title</h2>
+                    <p class="copy">Short description</p>
+                    <button onclick="showDetails('prj title3','prj desc3','https://drive.google.com/file/d/1KFFhLqRLhdF27KwVVe0npoVX0lNLPhpM/preview')"
+                            class="btn detailsButton">Show Details
+                    </button>
+                </div>
+            </div>
+            <div class="card"
+                 style="background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);">
+                <div class="content">
+                    <h2 class="title">Project title</h2>
+                    <p class="copy">Short description</p>
+                    <button onclick="showDetails('prj title4','prj desc4','https://drive.google.com/file/d/1KFFhLqRLhdF27KwVVe0npoVX0lNLPhpM/preview')"
+                            class="btn detailsButton">Show Details
+                    </button>
+                </div>
+            </div>
+            <div class="card"
+                 style="background-image: url(https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);">
+                <div class="content">
+                    <h2 class="title">Project title</h2>
+                    <p class="copy">Short description</p>
+                    <button onclick="showDetails('prj title5','prj desc5','https://drive.google.com/file/d/1KFFhLqRLhdF27KwVVe0npoVX0lNLPhpM/preview')"
+                            class="btn detailsButton">
+                        Show Details
+                    </button>
+                </div>
+            </div>
+            <div class="card"
+                 style="background-image: url(https://images.unsplash.com/photo-1533903345306-15d1c30952de?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);">
+                <div class="content">
+                    <h2 class="title">Project title</h2>
+                    <p class="copy">Short description</p>
+                    <button onclick="showDetails('prj title6','prj desc6','https://drive.google.com/file/d/1KFFhLqRLhdF27KwVVe0npoVX0lNLPhpM/preview')"
+                            class="btn detailsButton">Show Details
+                    </button>
+                </div>
+            </div>
+        </div>
+                </div>
+                <div class="col"></div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <div class="sectionHeading" style="text-align: center;">
+            Section 2
+        </div>
+    </div>
+
+
+    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+        <div class="sectionHeading" style="text-align: center;">
+            Section 3
+        </div>
+    </div>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+<script>
+    const showDetails = (prjTitle, prjDesc, prjVideo) => {
+        console.log("Show Details", prjTitle, prjDesc, prjVideo);
+        document.getElementById("modalPrjDesc").innerText = prjDesc;
+        document.getElementById("modalPrjVideo").setAttribute("src", prjVideo);
+        document.getElementById("exampleModalLabel").innerText = prjTitle;
+        document.getElementById("launchModal").click();
+    };
+</script>
+</body>
+</html>
