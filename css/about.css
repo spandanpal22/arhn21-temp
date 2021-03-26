@@ -9,6 +9,7 @@ body {
   font-size: 24px;
   -webkit-font-smoothing: none;
   line-height: 1.2;
+    cursor: context-menu;
 }
 h1 {
   font-size: 4rem;
@@ -17,18 +18,6 @@ h1 {
 }
 p {
   margin-bottom: 2rem;
-}
-a,
-a:visited {
-  border-bottom: 0.2rem solid #14fdce;
-  color: #14fdce;
-  text-decoration: none;
-}
-a:active,
-a:focus,
-a:hover {
-  background-color: #14fdce;
-  color: #031e11;
 }
 .piece {
   display: block;
