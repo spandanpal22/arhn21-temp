@@ -43,11 +43,12 @@ body {
     font-size: 25px;
     margin-right: 10px;
     margin-top: 5%;
+    color: green;
 }
 
 .mail-icon{
     font-size: 20px;
-    color: dodgerblue;
+    color: green;
     margin-right: 2%;
 }
 
