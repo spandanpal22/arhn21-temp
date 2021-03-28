@@ -6,7 +6,9 @@ body {
 .nav-item > .active {
     background-color: #7868e6 !important;
 }
-
+.detailsButton{
+    z-index:99999999;
+}
 .prjVideo {
     width: 35vw;
     height: 40vh;
