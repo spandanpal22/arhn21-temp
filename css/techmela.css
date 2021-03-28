@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 body {
     background-color: #b8b5ff;
+    font-family: 'Roboto';
 }
 
 
@@ -18,14 +20,14 @@ body {
 
 .sectionHeading {
     font-size: 3rem;
-    font-family: "Exo", sans-serif;
+    font-family: "Roboto";
     margin-top: 3%;
     margin-bottom: 4%;
 }
 
 .mainHeading {
     font-size: 4rem;
-    font-family: "Coiny";
+    font-family: "Roboto";
     margin-top: 3%;
     margin-bottom: 1%;
 }
@@ -38,7 +40,7 @@ body {
 
 .nav-link {
     font-size: 1.5rem;
-    font-family: "Oswald", sans-serif;
+    font-family: "Roboto";
 }
 
 #pills-tab {
@@ -71,7 +73,7 @@ body {
     }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 :root {
     --d: 700ms;
     --e: cubic-bezier(0.19, 1, 0.22, 1);
